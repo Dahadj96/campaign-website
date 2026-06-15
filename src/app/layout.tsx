@@ -10,6 +10,28 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: "زينب داحاج - المترشحة لانتخابات المجلس الشعبي الوطني",
   description: "الموقع الرسمي لزينب داحاج، مرشحة جبهة التحرير الوطني، قائمة رقم 02، ولاية أدرار.",
+  openGraph: {
+    title: "زينب داحاج - المترشحة لانتخابات المجلس الشعبي الوطني",
+    description: "الموقع الرسمي لزينب داحاج، مرشحة جبهة التحرير الوطني، قائمة رقم 02، ولاية أدرار.",
+    url: 'https://dahadjzeyneb.com',
+    siteName: 'زينب داحاج',
+    images: [
+      {
+        url: 'https://dahadjzeyneb.com/portrait.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'زينب داحاج - المترشحة لانتخابات المجلس الشعبي الوطني',
+      },
+    ],
+    locale: 'ar_DZ',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "زينب داحاج - المترشحة لانتخابات المجلس الشعبي الوطني",
+    description: "الموقع الرسمي لزينب داحاج، مرشحة جبهة التحرير الوطني، قائمة رقم 02، ولاية أدرار.",
+    images: ['https://dahadjzeyneb.com/portrait.jpg'],
+  },
 };
 
 export default function RootLayout({
