@@ -26,7 +26,6 @@ export default function Home() {
               <a href="#" className="text-gray-900 hover:text-algeria-green font-bold transition-colors">الرئيسية</a>
               <a href="#about" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">عن المترشحة</a>
               <a href="#program" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">البرنامج الانتخابي</a>
-              <a href="#comments" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">رسائل الدعم</a>
             </div>
           </div>
         </div>
