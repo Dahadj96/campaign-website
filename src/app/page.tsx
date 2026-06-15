@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CommentsSlider from "@/components/CommentsSlider";
 
 export default function Home() {
   return (
@@ -111,46 +112,10 @@ export default function Home() {
             <div className="h-1 w-24 bg-algeria-green mx-auto rounded-full mt-4"></div>
           </div>
           
-          <div className="flex overflow-x-auto pb-8 pt-4 gap-6 snap-x snap-mandatory hide-scrollbar">
-            {[
-              "1.PNG", "12147475252.PNG", "15151.PNG", "1878455.PNG", 
-              "25417521.PNG", "32474151.PNG", "4184845415.PNG", "484582622.PNG", 
-              "512512512521.PNG", "51251521.PNG", "5151151.PNG", "515151256.PNG", 
-              "515158151.PNG", "5253533.PNG", "Capture.PNG"
-            ].map((img, idx) => (
-              <div 
-                key={idx} 
-                className="snap-center shrink-0 w-80 h-40 sm:w-96 sm:h-48 relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-200 bg-white flex items-center justify-center p-2"
-              >
-                <Image 
-                  src={`/coments/${img}`} 
-                  alt={`رسالة دعم ${idx + 1}`}
-                  fill
-                  className="object-contain p-2"
-                  sizes="(max-width: 640px) 320px, 384px"
-                />
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex justify-center gap-2 mt-2 hidden sm:flex">
-             <span className="text-gray-400 text-sm flex items-center gap-2">
-               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-               اسحب لرؤية المزيد
-             </span>
-          </div>
+          {/* New Interactive Slider */}
+          <CommentsSlider />
         </div>
       </section>
-
-      <style dangerouslySetInnerHTML={{__html: `
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}} />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 border-t-4 border-algeria-red">
