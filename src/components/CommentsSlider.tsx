@@ -69,14 +69,14 @@ export default function CommentsSlider() {
               return (
                 <div 
                   key={index} 
-                  className={`flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_40%] min-w-0 px-2 sm:px-4 transition-all duration-500 ease-in-out ${isActive ? 'scale-110 z-10 opacity-100 cursor-pointer' : 'scale-90 opacity-40 cursor-pointer'}`}
+                  className={`flex-[0_0_85%] sm:flex-[0_0_60%] md:flex-[0_0_50%] min-w-0 px-2 sm:px-4 transition-all duration-500 ease-in-out ${isActive ? 'scale-110 z-10 opacity-100 cursor-pointer' : 'scale-90 opacity-40 cursor-pointer'}`}
                   onClick={() => openFullscreen(index)}
                 >
-                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 p-2 h-48 sm:h-56 w-full flex items-center justify-center">
+                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200 p-2 w-full aspect-[16/9] sm:aspect-[21/9] flex items-center justify-center">
                     
                     {/* Decorative Quote Icon */}
-                    <div className="absolute top-2 right-2 text-algeria-green/20 z-10 pointer-events-none">
-                      <Quote size={40} className="transform rotate-180" />
+                    <div className="absolute top-2 right-2 text-algeria-green/10 z-10 pointer-events-none">
+                      <Quote size={32} className="transform rotate-180" />
                     </div>
                     
                     <div className="relative w-full h-full pointer-events-none">
