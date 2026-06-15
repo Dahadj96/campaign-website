@@ -25,6 +25,7 @@ export default function Home() {
               <a href="#" className="text-gray-900 hover:text-algeria-green font-bold transition-colors">الرئيسية</a>
               <a href="#about" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">عن المترشحة</a>
               <a href="#program" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">البرنامج الانتخابي</a>
+              <a href="#comments" className="text-gray-700 hover:text-algeria-red font-medium transition-colors">رسائل الدعم</a>
             </div>
           </div>
         </div>
@@ -97,6 +98,35 @@ export default function Home() {
             <p className="text-gray-600 leading-relaxed text-lg italic">
               "سيتم إضافة تفاصيل البرنامج الانتخابي قريباً..."
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Support Comments Section */}
+      <section id="comments" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">رسائل الدعم</h2>
+            <p className="text-gray-600 text-lg">آراء ودعم سكان ولاية أدرار للمترشحة زينب داحاج</p>
+            <div className="h-1 w-24 bg-algeria-green mx-auto rounded-full mt-4"></div>
+          </div>
+          
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
+            {[
+              "1.PNG", "12147475252.PNG", "15151.PNG", "1878455.PNG", 
+              "25417521.PNG", "32474151.PNG", "4184845415.PNG", "484582622.PNG", 
+              "512512512521.PNG", "51251521.PNG", "5151151.PNG", "515151256.PNG", 
+              "515158151.PNG", "5253533.PNG", "Capture.PNG"
+            ].map((img, idx) => (
+              <div key={idx} className="break-inside-avoid rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-200 bg-white">
+                <img 
+                  src={`/coments/${img}`} 
+                  alt="رسالة دعم" 
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
