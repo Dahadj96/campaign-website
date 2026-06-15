@@ -115,11 +115,11 @@ export default function CommentsSlider() {
 
       {/* Fullscreen Lightbox Modal */}
       {isFullscreen && (
-        <div className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex flex-col items-center justify-center animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-[100] bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center animate-in fade-in duration-300">
           
           <button 
             onClick={closeFullscreen}
-            className="absolute top-4 right-4 sm:top-8 sm:right-8 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-colors z-[110]"
+            className="absolute top-4 right-4 sm:top-8 sm:right-8 bg-black/5 hover:bg-black/10 text-gray-900 p-3 rounded-full transition-colors z-[110]"
             aria-label="إغلاق"
           >
             <X size={32} />
@@ -135,7 +135,7 @@ export default function CommentsSlider() {
                       src={`/coments/${img}`} 
                       alt={`رسالة دعم ${index + 1}`}
                       fill
-                      className="object-contain"
+                      className="object-contain drop-shadow-xl"
                       sizes="100vw"
                       quality={100}
                     />
@@ -146,21 +146,21 @@ export default function CommentsSlider() {
 
             <button 
               onClick={scrollNextFs} 
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white shadow-lg rounded-full p-3 transition-colors z-[110] hidden sm:block"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/5 hover:bg-black/10 text-gray-900 shadow-sm rounded-full p-3 transition-colors z-[110] hidden sm:block"
             >
               <ChevronLeft size={36} />
             </button>
             
             <button 
               onClick={scrollPrevFs} 
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white shadow-lg rounded-full p-3 transition-colors z-[110] hidden sm:block"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/5 hover:bg-black/10 text-gray-900 shadow-sm rounded-full p-3 transition-colors z-[110] hidden sm:block"
             >
               <ChevronRight size={36} />
             </button>
 
           </div>
           
-          <div className="absolute bottom-8 text-white/50 text-sm">
+          <div className="absolute bottom-8 text-gray-500 font-medium text-sm">
              اسحب للتنقل
           </div>
         </div>
