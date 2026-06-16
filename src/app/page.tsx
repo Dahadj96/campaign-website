@@ -77,10 +77,15 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-r-4 border-algeria-green pr-4">عن المترشحة</h2>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                <p className="text-gray-600 leading-relaxed text-lg italic text-center">
-                  "سيتم إضافة السيرة الذاتية قريباً..."
-                </p>
+              <div className="bg-white p-2 rounded-3xl shadow-xl border border-gray-100 overflow-hidden relative aspect-video transform transition hover:scale-[1.02]">
+                <iframe 
+                  className="w-full h-full rounded-2xl"
+                  src="https://www.youtube.com/embed/uaV75aEJI4o?rel=0" 
+                  title="من هي زينب داحاج؟" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
