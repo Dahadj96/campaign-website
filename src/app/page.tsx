@@ -107,6 +107,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Campaign Office Section */}
+      <section id="office" className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">مقر المداومة الرئيسية</h2>
+            <div className="h-1 w-24 bg-algeria-red mx-auto rounded-full mt-4"></div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto bg-gray-50 rounded-3xl p-6 md:p-8 shadow-sm border border-gray-200">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 text-center md:text-right">
+              <div className="bg-algeria-green text-white p-4 rounded-full shadow-md shrink-0">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 leading-tight">
+                مقر المداومة الرئيسية <br/> 
+                <span className="text-algeria-green text-xl md:text-2xl">قرب فندق غلاكسي</span>
+              </h3>
+            </div>
+            
+            <div className="w-full relative aspect-[16/10] sm:aspect-[21/9] rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-gray-200">
+              <Image 
+                src="/office.jpg" 
+                alt="مقر المداومة الرئيسية قرب فندق غلاكسي"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Support Comments Section */}
       <section id="comments" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
