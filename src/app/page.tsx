@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-800 leading-tight">
                 مقر المداومة الرئيسية <br/> 
-                <span className="text-algeria-green text-xl md:text-2xl">قرب فندق غلاكسي</span>
+                <span className="text-algeria-green text-xl md:text-2xl">قرب فندق غلاكسي أدرار وسط المدينة</span>
               </h3>
             </div>
             
